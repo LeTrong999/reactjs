@@ -27,7 +27,6 @@ class App extends Component {
 			return <Route key={index} exact={route.exact} path={route.path} component={route.main}/>
 		})
 	}
-	console.log(xhtml);
 	return xhtml;
   }
 }

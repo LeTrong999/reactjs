@@ -8,3 +8,6 @@ export const UNSELECT_ITEM 		= 'UNSELECT_ITEM';
 export const CHANGE_SEARCH	= 'CHANGE_SEARCH';
 
 export const DELETE_ITEM 	= 'DELETE_ITEM';
+
+export const USER_LOGIN 		= 'USER_LOGIN';
+export const USER_LOGOUT 		= 'USER_LOGOUT';

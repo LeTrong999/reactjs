@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
-
-import Title from './../component/Title';
-import Control from './../component/Control';
-import Form from './../component/Form';
-import List from './../component/List';
+import FormLogin from './../component/FormLogin';
 
 class Todolist extends Component {
     constructor(props){
@@ -16,16 +12,13 @@ class Todolist extends Component {
 
     render() {
         let {user} = this.props;
-        if(user.isLogin === false) {
-            return <Redirect to='/login' />;
+        if(user.isLogin === true) {
+            return <Redirect to='/todolist' />;
         }
-        let itemSelected = this.state.itemSelected;
         return (
             <div className="row">
-                <Title />
-                <Control/>
-                <Form />
-                <List />
+                <h1 style={{textAlign: 'center'}}>Login</h1>
+                <FormLogin />
             </div>
         )
     }

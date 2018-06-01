@@ -59,3 +59,16 @@ export const actUnSelectItem = () => {
 		type : types.UNSELECT_ITEM
 	}
 }
+
+export const actLogin = (username, password) => {
+	return {
+		type : types.USER_LOGIN,
+		username,
+		password
+	}
+}
+export const actLogout = () => {
+	return {
+		type : types.USER_LOGOUT
+	}
+}
